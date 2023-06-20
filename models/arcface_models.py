@@ -6,21 +6,6 @@ from torch.nn import Parameter
 from .config import device, num_classes
 
 
-def create_model(opt):
-    #from .pix2pixHD_model import Pix2PixHDModel, InferenceModel
-    from .fs_model import fsModel
-    model = fsModel()
-
-    model.initialize(opt)
-    if opt.verbose:
-        print("model [%s] was created" % (model.name()))
-
-    if opt.isTrain and len(opt.gpu_ids) and not opt.fp16:
-        model = torch.nn.DataParallel(model, device_ids=opt.gpu_ids)
-
-    return model
-
-
 
 class SEBlock(nn.Module):
     def __init__(self, channel, reduction=16):
@@ -137,6 +122,7 @@ class ResNet(nn.Module):
 
         x = self.bn2(x)
         x = self.dropout(x)
+        # feature = x
         x = x.view(x.size(0), -1)
         x = self.fc(x)
         x = self.bn3(x)

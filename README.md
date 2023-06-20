@@ -13,7 +13,12 @@ The high resolution version of ***SimSwap-HQ*** is supported!
 
 [![simswaplogo](/docs/img/logo1.png)](https://github.com/neuralchen/SimSwap)
 
-Our paper can be downloaded from [[Arxiv]](https://arxiv.org/pdf/2106.06340v1.pdf) [[ACM DOI]](https://dl.acm.org/doi/10.1145/3394171.3413630) 
+Our paper can be downloaded from [[Arxiv]](https://arxiv.org/pdf/2106.06340v1.pdf) [[ACM DOI]](https://dl.acm.org/doi/10.1145/3394171.3413630)
+
+
+### This project also received support from [SocialBook](https://socialbook.io).
+<!-- [![logo](./simswaplogo/socialbook_logo.2020.357eed90add7705e54a8.svg)](https://socialbook.io) -->
+<img width=30% src="./simswaplogo/socialbook_logo.2020.357eed90add7705e54a8.svg"/>
 
 <!-- [[Google Drive]](https://drive.google.com/file/d/1fcfWOGt1mkBo7F0gXVKitf8GJMAXQxZD/view?usp=sharing) 
 [[Baidu Drive ]](https://pan.baidu.com/s/1-TKFuycRNUKut8hn4IimvA) Password: ```ummt``` -->
@@ -29,7 +34,9 @@ If you find this project useful, please star it. It is the greatest appreciation
 
 ## Top News <img width=8% src="./docs/img/new.gif"/>
 
-**`2022-04-21`**: For resource limited users, we provide the cropped VGGFace2-224 dataset [[Google Driver] VGGFace2-224 (10.8G)](https://drive.google.com/file/d/19pWvdEHS-CEG6tW3PdxdtZ5QEymVjImc/view?usp=sharing) [[Baidu Driver] ](https://pan.baidu.com/s/1OiwLJHVBSYB4AY2vEcfN0A) [Password: lrod].
+**`2023-04-25`**: We fixed the "AttributeError: 'SGD' object has no attribute 'defaults' now" bug. If you have already downloaded **arcface_checkpoint.tar**, please **download it again**. Also, you also need to update the scripts in ```./models/```.
+
+**`2022-04-21`**: For resource limited users, we provide the cropped VGGFace2-224 dataset [[Google Driver] VGGFace2-224 (10.8G)](https://drive.google.com/file/d/19pWvdEHS-CEG6tW3PdxdtZ5QEymVjImc/view?usp=sharing) [[Baidu Driver]](https://pan.baidu.com/s/1OiwLJHVBSYB4AY2vEcfN0A) [Password: lrod].
 
 **`2022-04-20`**: Training scripts are now available. We highly recommend that you guys train the simswap model with our released high quality dataset [VGGFace2-HQ](https://github.com/NNNNAI/VGGFace2-HQ).
 
@@ -49,6 +56,9 @@ If you find this project useful, please star it. It is the greatest appreciation
 ## High Resolution Dataset [VGGFace2-HQ](https://github.com/NNNNAI/VGGFace2-HQ)
 
 [![logo](./docs/img/vggface2_hq_compare.png)](https://github.com/NNNNAI/VGGFace2-HQ)
+
+
+
 
 ## Dependencies
 - python3.6+
